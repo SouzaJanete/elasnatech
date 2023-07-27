@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <img style="max-width: 200px; z-index: -1;" src="imagens/Logo.jpg" alt="Logotipo">
+
+  <title>Cardápio</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+      <h1>Cardápio do Dia - Delícias da Larissa</h1>
+  <div id="mapContainer">
+    <!-- Insira o código de incorporação do mapa do Google aqui -->
+    <iframe style="width: 200px;" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0.0035988667585275416!2d-48.766121689079846!3d-15.77063088328877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a35ddab6f1b03%3A0x88de466907c1a389!2sS%C3%A3o%20Louren%C3%A7o%20Caia%C3%A7aras!5e0!3m2!1sen!2sus!4v1631205568579!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <p class="loc">Localização: Parque dos Pirineus - Cocalzinho de Goiás</p>
+  <p class="loc">Pedido por telefone: (62) 99155-5471</p>
+  <ul class="menu">
+    <li>
+      <img src="imagens/Alfajor Gourmert Oreo Nutella.jpg" alt="Alfajor">
+      <span> - Alfajor Gourmet Oreo com Nutella</span>   &nbsp;
+      <span class="product-price">R$ 6,00</span>
+      <input type="checkbox" class="product-checkbox">
+    </li>
+    <li>
+      <img src="imagens/Copo Ovomaltine.jpg" alt="Copo Ovomaltine">
+      <span>Copo Ovomaltine</span>   &nbsp;
+      <span class="product-price"> 300 ml - R$ 14,00 / </span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> &nbsp;
+     <span class="product-price"> 400 ml - R$ 17,00</span>
+      <input type="checkbox" class="product-checkbox">
+
+    </li>
+    <li>
+        <img src="imagens/Sanduíche Brownie.jpg" alt="Sanduíche Brownie">
+        <span>Sanduíche Brownie - Ninho com Nutella</span>
+        <span class="product-price"> R$ 10,00</span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> 
+      </li>
+      <li>
+        <img src="imagens/Bombom Gourmet Ninho com Nutella.jpg" alt="Bombom">
+        <span>Bombom Gourmet Ninho com Nutella</span>
+        <span class="product-price"> R$ 3,00</span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> 
+      </li>
+      <li>
+        <img src="imagens/Copo Ninho Duplo.jpg" alt="Ninho Duplo">
+        <span>Copo Ninho Duplo</span>
+        <span class="product-price"> 300 ml - R$ 16,00 / </span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> &nbsp;
+     <span class="product-price"> 400 ml - R$ 19,00</span>
+      <input type="checkbox" class="product-checkbox"> 
+      </li>
+      <li>
+        <img src="imagens/Copo Dupla Felidade.jpg" alt="Dupla Felidade">
+        <span>Copo Dupla Felidade</span>
+        <span class="product-price"> 300 ml - R$ 14,00 / </span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> &nbsp;
+     <span class="product-price"> 400 ml - R$ 17,00</span>
+      <input type="checkbox" class="product-checkbox"> 
+      </li> 
+      <li>
+        <img src="imagens/Copo Sensação.jpg" alt="Sensação">
+        <span>Copo Sensação</span>
+        <span class="product-price"> 300 ml - R$ 14,00 / </span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> &nbsp;
+     <span class="product-price"> 400 ml - R$ 17,00</span>
+      <input type="checkbox" class="product-checkbox"> 
+      </li> 
+      <li>
+        <img src="imagens/Morango no pote.jpg" alt="Morango no Pote">
+        <span>Morango no pote</span>
+        <span class="product-price"> P 128 ml - R$ 10,00 / </span>   &nbsp;
+        <input type="checkbox" class="product-checkbox"> &nbsp;
+       <span class="product-price"> M 260 ml - R$ 16,00</span>
+        <input type="checkbox" class="product-checkbox"> 
+      </li> 
+      <li>
+        <img src="imagens/Palha Italiana Ninho com Oreo.jpg" alt="Palha Italiana">
+        <span>Palha Italiana Ninho com Oreo</span>
+        <span class="product-price"> R$ 3,00</span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> 
+      </li>
+      <li>
+        <img src="imagens/Pipoca Gourmet.jpg" alt="Pipoca">
+        <span>Pipoca Gourmet</span>
+        <span class="product-price"> 100g R$ 6,00</span>   &nbsp;
+      <input type="checkbox" class="product-checkbox"> 
+      </li>
+    <!-- Adicione mais pratos conforme necessário -->
+  </ul>
+
+<div class="order-section">
+  <h2>Seu Pedido</h2>
+  <div id="order-details">
+    <p>Nenhum item selecionado.</p>
+  </div>
+  <label for="payment">Forma de Pagamento:</label>
+  <select id="payment" name="payment">
+    <option value="credit-card">Cartão de Crédito</option>
+    <option value="debit-card">Cartão de Débito</option>
+    <option value="cash">Dinheiro</option>
+  </select>
+  <button onclick="sendOrder()">Enviar Pedido</button>
+</div>
+  
+  <div id="footer">
+    <p>Referência das fotos:</p>
+    
+      <li>Fotos feitas por Lari Doces e Gourmert</li>
+     
+     
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
