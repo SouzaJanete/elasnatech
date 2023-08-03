@@ -1,15 +1,27 @@
 /* css.css */
 
+.header {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
 
-.logo-container,
+.logo-container {
+  text-align: center;
+  margin: 20px;
+}
 .title-container,
 .map-container {
   text-align: center;
-  margin-bottom: 20px;
-}
+  margin: 0px;
+  }
 
 .map-container {
-  position: relative;
+  position: center;
+ 
+  
 }
 
 /* Estilo para o título (h1) */
@@ -19,7 +31,7 @@ h1 {
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ffb6c1;
     margin: 0;
   }
   
@@ -51,6 +63,9 @@ body {
     width: 100px;
     height: 100px;
     margin-right: 10px;
+  }
+  .order-section {
+    margin: 20px;
   }
   
   #footer {
