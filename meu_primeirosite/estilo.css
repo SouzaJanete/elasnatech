@@ -1,0 +1,66 @@
+
+body {
+  background-color: #f2f6f6;
+  height: 100%;
+  margin: 0;
+  color: black; /* Adding text color */
+  padding: 0 24px;
+
+  }
+
+.header {
+    background-color: #b8d3b9;      
+    align-items: center;     
+    justify-content: center;     
+    padding: 20px;  
+   }
+
+.frase {
+  background-color: rgb(228, 232, 240);
+  margin-top: 0; /* Adding a top margin to create space between h1 and h2 */
+  text-align: justify;
+  padding: 0 24px;
+}
+
+.logo-container {
+  margin-right: 20px;
+  
+}
+
+.h1 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+   margin-left: 20px;
+}
+
+.texto {
+  text-align: justify;
+}
+.texto p {
+  text-align: justify;
+  padding: 0 24px;
+}
+
+.number {
+  text-align: justify;
+  padding: 0 24px;
+}
+
+.site {
+  color: #ff7f50; /* Change the link color */
+  padding: 0 24px;
+}
+
+.video {
+ text-align: center;
+ padding: 0 24px;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+  
